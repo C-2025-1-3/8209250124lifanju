@@ -1,14 +1,13 @@
-#include<iostream>
+#include <iostream>
+#include <iomanip>
 using namespace std;
-#define PI 3.14159
-int main()
-{
-	double r, h, volume;
-	cout << "请输入圆锥底面半径:";
-	cin >> r;
-	cout << "请输入圆锥高:";
-	cin >> h;
-	volume = (1.0 / 3) * PI * r * r * h;
-	cout << "圆锥的体积是:" << volume << endl;
-	return 0;
+
+int main() {
+    double fahrenheit, celsius;
+    cout << "请输入华氏温度：";
+    cin >> fahrenheit;
+    // 华氏转摄氏公式：C = (F - 32) * 5 / 9
+    celsius = (fahrenheit - 32) * 5.0 / 9;
+    cout << "转换后的摄氏温度为：" << fixed << setprecision(2) << celsius << "℃" << endl;
+    return 0;
 }
